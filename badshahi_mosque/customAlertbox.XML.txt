@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_main">
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_phone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Phone:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/et_paddingleft"
+            android:inputType="number"
+            android:text="@string/number"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/ll_email">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Email: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/et_paddingleft"
+            android:inputType="textEmailAddress"
+            android:text="@string/email_address"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_timings"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timings: "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday - Friday:"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/timings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="05dp"
+            android:inputType="time"
+            android:text="8:00 AM to 4:00 PM"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
